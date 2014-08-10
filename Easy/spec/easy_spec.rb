@@ -3,7 +3,7 @@ require 'spec_helper.rb'
 require 'first_reverse.rb'
 
 # For this challenge you will be reversing a string.
-describe "FirstReverse" do
+describe "#FirstReverse" do
 
   it "returns the same string if it is one character long" do
     FirstReverse("a").should == "a"
