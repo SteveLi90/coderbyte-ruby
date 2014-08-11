@@ -4,6 +4,9 @@ require 'first_reverse.rb'
 require 'dash_insert.rb'
 require 'swap_case.rb'
 require 'number_addition.rb'
+require 'third_greatest.rb'
+require 'powers_of_two.rb'
+require 'prime_time.rb'
 
 # For this challenge you will be reversing a string.
 describe "#FirstReverse" do
@@ -89,4 +92,41 @@ describe "#NumberAddition" do
 
 end
 
+# For this challenge you will determine the third largest string within an array.
+describe "#ThirdGreatest" do
 
+	it "Return the third largest word within an array of strings." do
+		ThirdGreatest(["hello", "world", "before", "all"]).should == "world"
+	end
+
+	it "Return the third largest word within an array of strings." do
+		ThirdGreatest(["coder","byte","code"]).should == "code" 
+	end
+
+	it "Return the third largest word within an array of strings." do
+		ThirdGreatest(["abc","defg","z","hijk"]).should == "abc"
+	end
+
+end
+
+# For this challenge you will be determining whether or not a number is a power of two.
+describe "#PowersofTwo" do
+
+	it "Return the string \"true\" if the number is a power of two." do
+		PowersofTwo(16).should == "true"
+	end
+
+	it "Return the string \"true\" if the number is a power of two." do
+		PowersofTwo(4).should == "true"
+	end
+
+	it "Return the string \"false\" if the number isn't a power of two." do
+		PowersofTwo(124).should == "false"
+	end
+
+end
+
+# For this challenge you will be determining if an argument is a prime number.
+describe "#PrimeTime" do
+
+end

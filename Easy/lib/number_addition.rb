@@ -12,9 +12,7 @@ def NumberAddition(string)
 		end
 	end
 
-	numbers.each do |number|
-		sum += number
-	end
+	numbers.each { |number| sum += number }
 
 	sum	
 end
