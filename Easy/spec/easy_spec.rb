@@ -6,7 +6,6 @@ require 'swap_case.rb'
 require 'number_addition.rb'
 require 'third_greatest.rb'
 require 'powers_of_two.rb'
-require 'prime_time.rb'
 
 # For this challenge you will be reversing a string.
 describe "#FirstReverse" do
@@ -123,10 +122,5 @@ describe "#PowersofTwo" do
 	it "Return the string \"false\" if the number isn't a power of two." do
 		PowersofTwo(124).should == "false"
 	end
-
-end
-
-# For this challenge you will be determining if an argument is a prime number.
-describe "#PrimeTime" do
 
 end
