@@ -1,11 +1,11 @@
 require 'rspec'
-require 'spec_helper.rb'
 require 'prime_time.rb'
 require 'run_length.rb'
 require 'prime_mover.rb'
 require 'palindrome_two.rb'
 require 'division.rb'
 require 'string_scramble.rb'
+require 'arith_geo_ii.rb'
 
 # For this challenge you will determine the third largest string within an array.
 describe "#PrimeTime" do
@@ -128,19 +128,19 @@ describe "#StringScramble" do
 
 end
 
+# # For this challenge you will determine if numbers within an array follow an arithmetic or geometric sequence.
+# describe "#ArithGeoII" do
 #
-describe "#ArithGeoII" do
-
-  it "Return the string \"false\" if a portion of the first string's characters can not be rearranged to match the second's." do
-    expect(StringScramble("h3llko", "hello")).to eq("false")
-  end
-
-  it "Return the string \"false\" if a portion of the first string's characters can not be rearranged to match the second's." do
-    expect(StringScramble("h3llko", "hello")).to eq("false")
-  end
-
-  it "Return the string \"false\" if a portion of the first string's characters can not be rearranged to match the second's." do
-    expect(StringScramble("h3llko", "hello")).to eq("false")
-  end
-
-end
+#   it "Return the string \"Arithmetic\" if the sequence follows an arithmetic pattern." do
+#     expect(StringScramble([5, 10, 15])).to eq("Arithmetic")
+#   end
+#
+#   it "If the sequence doesn't follow either pattern return -1. " do
+#     expect(StringScramble([2, 4, 16, 24])).to eq(-1)
+#   end
+#
+#   it "Return \"Geometric\" if it follows a geometric pattern." do
+#     expect(StringScramble([2, 6, 18, 54])).to eq("Geometric")
+#   end
+#
+# end
