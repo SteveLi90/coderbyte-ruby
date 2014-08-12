@@ -5,6 +5,7 @@ require 'run_length.rb'
 require 'prime_mover.rb'
 require 'palindrome_two.rb'
 require 'division.rb'
+require 'string_scramble.rb'
 
 # For this challenge you will determine the third largest string within an array.
 describe "#PrimeTime" do
@@ -108,4 +109,38 @@ describe "#Division" do
 	it "Return the greatest number that evenly evenly divides both numbers with no remainder from the range 1 to 10^3." do
 		Division(777, 999).should == 111
 	end
+end
+
+# For this challenge you will determine if string 1 can be rearranged into string 2.
+describe "#StringScramble" do
+
+  it "Return the string \"true\" if a portion of the first string's characters can be rearranged to match the second's." do
+    expect(StringScramble("rkqodlw", "world")).to eq("true")
+  end
+
+  it "Return the string \"true\" if a portion of the first string's characters can be rearranged to match the second's." do
+    expect(StringScramble("cdore", "coder")).to eq("true")
+  end
+
+  it "Return the string \"false\" if a portion of the first string's characters can not be rearranged to match the second's." do
+    expect(StringScramble("h3llko", "hello")).to eq("false")
+  end
+
+end
+
+#
+describe "#ArithGeoII" do
+
+  it "Return the string \"false\" if a portion of the first string's characters can not be rearranged to match the second's." do
+    expect(StringScramble("h3llko", "hello")).to eq("false")
+  end
+
+  it "Return the string \"false\" if a portion of the first string's characters can not be rearranged to match the second's." do
+    expect(StringScramble("h3llko", "hello")).to eq("false")
+  end
+
+  it "Return the string \"false\" if a portion of the first string's characters can not be rearranged to match the second's." do
+    expect(StringScramble("h3llko", "hello")).to eq("false")
+  end
+
 end
