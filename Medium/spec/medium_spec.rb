@@ -6,6 +6,7 @@ require 'palindrome_two.rb'
 require 'division.rb'
 require 'string_scramble.rb'
 require 'arith_geo_ii.rb'
+require 'array_addition.rb'
 
 # For this challenge you will determine the third largest string within an array.
 describe "#PrimeTime" do
@@ -128,19 +129,36 @@ describe "#StringScramble" do
 
 end
 
-# # For this challenge you will determine if numbers within an array follow an arithmetic or geometric sequence.
-# describe "#ArithGeoII" do
-#
-#   it "Return the string \"Arithmetic\" if the sequence follows an arithmetic pattern." do
-#     expect(StringScramble([5, 10, 15])).to eq("Arithmetic")
-#   end
-#
-#   it "If the sequence doesn't follow either pattern return -1. " do
-#     expect(StringScramble([2, 4, 16, 24])).to eq(-1)
-#   end
-#
-#   it "Return \"Geometric\" if it follows a geometric pattern." do
-#     expect(StringScramble([2, 6, 18, 54])).to eq("Geometric")
-#   end
-#
-# end
+# For this challenge you will determine if numbers within an array follow an arithmetic or geometric sequence.
+describe "#ArithGeoII" do
+
+  it "Return the string \"Arithmetic\" if the sequence follows an arithmetic pattern." do
+    expect(ArithGeoII([5, 10, 15])).to eq("Arithmetic")
+  end
+
+  it "If the sequence doesn't follow either pattern return -1. " do
+    expect(ArithGeoII([2, 4, 16, 24])).to eq(-1)
+  end
+
+  it "Return \"Geometric\" if it follows a geometric pattern." do
+    expect(ArithGeoII([2, 6, 18, 54])).to eq("Geometric")
+  end
+
+end
+
+# For this challenge you will determine if numbers in an array can add up to a certain number in the array.
+describe "#ArrayAddition" do
+
+  it "Return the string \"true\" if any combination of numbers in the array can be added up to equal the largest number." do
+    expect(ArrayAddition([4, 6, 23, 10, 1, 3])).to eq("true")
+  end
+
+  it "Return the string \"true\" if any combination of numbers in the array can be added up to equal the largest number." do
+    expect(ArrayAddition([3, 5, -1, 8, 12])).to eq("true")
+  end
+
+  it "Return the string \"false\" if no combination of numbers in the array can be added up to equal the largest number." do
+    expect(ArrayAddition([5, 7, 16, 1, 2])).to eq("false")
+  end
+
+end
