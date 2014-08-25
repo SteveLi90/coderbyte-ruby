@@ -1,6 +1,7 @@
 def ArrayAddition(array)
   new_array = array.sort
   max_number = new_array.max
+  new_array.delete(max_number)
   flag = false
   
   (0...array.length).each do |x|
