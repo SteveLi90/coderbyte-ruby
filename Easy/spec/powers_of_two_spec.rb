@@ -4,15 +4,15 @@ require 'powers_of_two'
 describe "#PowersofTwo" do
 
   it "Return the string \"true\" if the number is a power of two." do
-    PowersofTwo(16).should == "true"
+    expect(PowersofTwo(16)).to eq("true")
   end
 
   it "Return the string \"true\" if the number is a power of two." do
-    PowersofTwo(4).should == "true"
+    expect(PowersofTwo(4)).to eq("true")
   end
 
   it "Return the string \"false\" if the number isn't a power of two." do
-    PowersofTwo(124).should == "false"
+    expect(PowersofTwo(124)).to eq("false")
   end
 
 end

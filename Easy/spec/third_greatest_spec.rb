@@ -4,15 +4,15 @@ require 'third_greatest'
 describe "#ThirdGreatest" do
 
   it "Return the third largest word within an array of strings." do
-    ThirdGreatest(["hello", "world", "before", "all"]).should == "world"
+    expect(ThirdGreatest(["hello", "world", "before", "all"])).to eq("world")
   end
 
   it "Return the third largest word within an array of strings." do
-    ThirdGreatest(["coder","byte","code"]).should == "code"
+    expect(ThirdGreatest(["coder","byte","code"])).to eq("code")
   end
 
   it "Return the third largest word within an array of strings." do
-    ThirdGreatest(["abc","defg","z","hijk"]).should == "abc"
+    expect(ThirdGreatest(["abc","defg","z","hijk"])).to eq("abc")
   end
 
 end

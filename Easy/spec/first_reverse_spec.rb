@@ -4,23 +4,23 @@ require 'first_reverse'
 describe "#FirstReverse" do
 
   it "returns the same string if it is one character long" do
-    FirstReverse("a").should == "a"
+    expect(FirstReverse("a")).to eq("a")
   end
 
   it "returns a reversed version of a long word" do
-    FirstReverse("arizona").should == "anozira"
+    expect(FirstReverse("arizona")).to eq("anozira")
   end
 
   it "returns a reversed capitalized word" do
-    FirstReverse("Lizette").should == "etteziL"
+    expect(FirstReverse("Lizette")).to eq("etteziL")
   end
 
   it "returns a reversed string including special characters" do
-    FirstReverse("Bang!").should == "!gnaB"
+    expect(FirstReverse("Bang!")).to eq("!gnaB")
   end
 
   it "returns a reversed string that doesn't use Roman letters" do
-    FirstReverse("泰永").should == "永泰"
+    expect(FirstReverse("泰永")).to eq("永泰")
   end
 
 end

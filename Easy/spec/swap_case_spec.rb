@@ -4,15 +4,15 @@ require 'swap_case'
 describe "#SwapCase" do
 
   it "returns a string with all capital letters downcased and all lower case letters upcased" do
-    SwapCase("Hello World").should == "hELLO wORLD"
+    expect(SwapCase("Hello World")).to eq("hELLO wORLD")
   end
 
   it "don't get sidetracked by dashes" do
-    SwapCase("Hello-LOL").should == "hELLO-lol"
+    expect(SwapCase("Hello-LOL")).to eq("hELLO-lol")
   end
 
   it "let punctuation stay the way it is" do
-    SwapCase("Sup DUDE!!?").should == "sUP dude!!?"
+    expect(SwapCase("Sup DUDE!!?")).to eq("sUP dude!!?")
   end
 
 end
