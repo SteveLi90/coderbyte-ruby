@@ -1,5 +1,6 @@
-# Have the function take the parameter being passed and return the largest word in the string.
+require 'longest_word'
 
+# Have the function take the parameter being passed and return the largest word in the string.
 describe "#LongestWord" do
 
   it "'fun&!! time' should return 'time'" do

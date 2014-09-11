@@ -1,0 +1,3 @@
+def LetterChanges(string)
+
+end

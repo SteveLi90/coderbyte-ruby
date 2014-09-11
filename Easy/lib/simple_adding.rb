@@ -1,0 +1,3 @@
+def SimpleAdding(number)
+
+end
