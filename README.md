@@ -1,1 +1,2 @@
-[coderbyte](http://coderbyte.com/) is a website of programming challenges with difficulties ranging from Easy to Hard. This repo contains my solutions to these challenges in the Ruby programming language.
+[coderbyte](http://coderbyte.com/) is a website of programming challenges.
+This repo contains solutions (and tests) corresponding to these challenges in the Ruby programming language.
