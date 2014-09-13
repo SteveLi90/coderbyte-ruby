@@ -1,4 +1,4 @@
-def ArrayAddition(array)
+def ArrayAdditionI(array)
   maximum = array.max
   remaining_elements = array
   remaining_elements.delete(maximum)

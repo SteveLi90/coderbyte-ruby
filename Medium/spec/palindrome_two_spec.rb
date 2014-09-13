@@ -5,19 +5,19 @@ require 'palindrome_two'
 describe "#PalindromeTwo" do
 
   it "Return the string \"true\" if the parameter is a palindrome." do
-    PalindromeTwo("Anne, I vote more cars race Rome-to-Vienna").should == "true"
+    expect(PalindromeTwo("Anne, I vote more cars race Rome-to-Vienna")).to eq("true")
   end
 
   it "Return the string \"false\" if the parameter is not a palindrome." do
-    PalindromeTwo("If the box contains a diamond,	I desire to believe that the box contains a diamond").should == "false"
+    expect(PalindromeTwo("If the box contains a diamond, I desire to believe that the box contains a diamond")).to eq("false")
   end
 
   it "Return the string \"true\" if the parameter is a palindrome." do
-    PalindromeTwo("Noel - sees Leon").should == "true"
+    expect(PalindromeTwo("Noel - sees Leon")).to eq("true")
   end
 
   it "Return the string \"true\" if the parameter is a palindrome." do
-    PalindromeTwo("A war at Tarawa!").should == "true"
+    expect(PalindromeTwo("A war at Tarawa!")).to eq("true")
   end
 
 end

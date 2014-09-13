@@ -4,27 +4,27 @@ require 'prime_mover'
 describe "#PrimeMover" do
 
   it "Return the ith prime number in the range from 1 to 10^4." do
-    PrimeMover(1).should == 2
+    expect(PrimeMover(1)).to eq(2)
   end
 
   it "Return the ith prime number in the range from 1 to 10^4." do
-    PrimeMover(2).should == 3
+    expect(PrimeMover(2)).to eq(3)
   end
 
   it "Return the ith prime number in the range from 1 to 10^4." do
-    PrimeMover(3).should == 5
+    expect(PrimeMover(3)).to eq(5)
   end
 
   it "Return the ith prime number in the range from 1 to 10^4." do
-    PrimeMover(16).should == 53
+    expect(PrimeMover(16)).to eq(53)
   end
 
   it "Return the ith prime number in the range from 1 to 10^4." do
-    PrimeMover(9).should == 23
+    expect(PrimeMover(9)).to eq(23)
   end
 
   it "Return the ith prime number in the range from 1 to 10^4." do
-    PrimeMover(100).should == 541
+    expect(PrimeMover(100)).to eq(541)
   end
 
 end

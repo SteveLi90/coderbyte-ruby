@@ -4,15 +4,15 @@ require 'prime_time'
 describe "#PrimeTime" do
 
   it "Return the string \"true\" if the number between 2 and 2^16 is prime." do
-    PrimeTime(2).should == "true"
+    expect(PrimeTime(2)).to eq("true")
   end
 
   it "Return the string \"true\" if the number between 2 and 2^16 is prime." do
-    PrimeTime(19).should == "true"
+    expect(PrimeTime(19)).to eq("true")
   end
 
   it "Return the string \"false\" if the number between 2 and 2^16 is composite." do
-    PrimeTime(110).should == "false"
+    expect(PrimeTime(110)).to eq("false")
   end
 
 end
