@@ -8,13 +8,7 @@ def CaesarCipher(string, number)
       next
     end
     number.times do
-      if current_letter == 'Z'
-        current_letter = 'A'
-      elsif current_letter == 'z'
-        current_letter = 'a'
-      else ('A'..'z').include?(current_letter)
-        current_letter = current_letter.next
-      end
+      current_letter = current_letter.next[0]
     end
     shifted_string << current_letter
   end
