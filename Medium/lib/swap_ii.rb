@@ -1,0 +1,3 @@
+def SwapII(string)
+
+end
