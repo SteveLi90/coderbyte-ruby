@@ -1,4 +1,4 @@
-require 'string_reduce'
+require 'string_reduction'
 
 # Return the smallest number you can get through the following reduction method:
 # Only the letters a, b, and c will be given.
@@ -6,19 +6,19 @@ require 'string_reduce'
 describe "#StringReduce" do
 
   it "'cab' should return 2" do
-    expect(StringReduce('cab')).to eq(2)
+    expect(StringReduction('cab')).to eq(2)
   end
 
   it "'bcab' should return 1" do
-    expect(StringReduce('bcab')).to eq(1)
+    expect(StringReduction('bcab')).to eq(1)
   end
 
   it "'abcabc' should return 2" do
-    expect(StringReduce('abcabc')).to eq(2)
+    expect(StringReduction('abcabc')).to eq(2)
   end
 
   it "'cccc' should return 4" do
-    expect(StringReduce('cccc')).to eq(4)
+    expect(StringReduction('cccc')).to eq(4)
   end
 
 end
