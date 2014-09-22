@@ -1,0 +1,3 @@
+def ThreeFiveMultiples(number)
+
+end
