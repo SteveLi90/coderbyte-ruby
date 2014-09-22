@@ -14,20 +14,9 @@ def StringReduction(string)
 end
 
 def can_be_reduced?(string)
-  string.include?("ab") ||
-  string.include?("bc") ||
-  string.include?("ac") ||
-  string.include?("ba") ||
-  string.include?("ca") ||
-  string.include?("cb")
+  #
 end
 
 def reduce!(string)
-  string
-    .gsub("ab", "c")
-    .gsub("bc", "a")
-    .gsub("ac", "b")
-    .gsub("ba", "c")
-    .gsub("cb", "a")
-    .gsub("ca", "b")
+  #
 end
