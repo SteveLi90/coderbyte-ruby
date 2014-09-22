@@ -1,0 +1,3 @@
+def CoinDeterminer(number)
+
+end
