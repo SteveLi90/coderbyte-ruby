@@ -1,0 +1,3 @@
+def MultipleBrackets(string)
+
+end
