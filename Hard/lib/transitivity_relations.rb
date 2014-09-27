@@ -1,0 +1,2 @@
+def TransitivityRelations(string)
+end
