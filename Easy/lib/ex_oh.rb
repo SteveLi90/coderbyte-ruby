@@ -1,6 +1,5 @@
 def ExOh(string)
-  x_count = 0
-  o_count = 0
+  x_count, o_count = 0, 0
 
   (0...string.length).each do |index|
     x_count += 1 if string[index].downcase == 'x'
