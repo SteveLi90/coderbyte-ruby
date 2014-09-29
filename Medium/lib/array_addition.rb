@@ -3,9 +3,7 @@ def ArrayAddition(array)
   remaining_elements = array
   remaining_elements.delete(maximum)
 
-  subsets = 1.upto(remaining_elements.length).flat_map do |number|
-    remaining_elements.combination(number).to_a
-  end
+  subsets = compute_subsets(remaining_elements)
   subsets.each do |subset|
     return "true" if sum_of_array(subset) == maximum
   end
@@ -21,4 +19,12 @@ def sum_of_array(array)
   end
 
   sum
+end
+
+def compute_subsets(elements)
+  subsets = 1.upto(elements.length).flat_map do |number|
+    elements.combination(number).to_a
+  end
+
+  subsets
 end
