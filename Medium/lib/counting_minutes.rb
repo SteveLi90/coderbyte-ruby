@@ -9,12 +9,14 @@ def CountingMinutes(string)
     if minutes_passed(time_two) - minutes_passed(time_one) > 0
       minutes_passed(time_two) - minutes_passed(time_one)
     else
-      minutes_passed(time_two) - minutes_passed(time_one) + MINUTES_IN_A_DAY 
+      minutes_passed(time_two) - minutes_passed(time_one) + MINUTES_IN_A_DAY
     end
   else
     minutes_left_in_the_day(time_one) + minutes_passed(time_two)
   end
 end
+
+private
 
 def parse_time(string)
   time = Time.new

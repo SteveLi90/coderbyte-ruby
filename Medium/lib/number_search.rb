@@ -14,6 +14,8 @@ def NumberSearch(string)
   (sum.to_f / letters.to_f).round
 end
 
+private
+
 def is_letter?(character)
   if LETTERS.include?(character) then true else false end
 end

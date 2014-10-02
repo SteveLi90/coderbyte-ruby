@@ -17,6 +17,8 @@ def MostFreeTime(array)
   encode_output(longest_free_time)
 end
 
+private
+
 def time_between(event_one, event_two)
   event_two.start - event_one.end
 end

@@ -14,6 +14,8 @@ def PrimeChecker(number)
   0
 end
 
+private
+
 def is_prime?(number)
   flag = true
 

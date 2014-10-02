@@ -20,6 +20,8 @@ def MultipleBrackets(string)
   end
 end
 
+private
+
 def all_zeroes?(l_bracket, r_bracket, l_parentheses, r_parentheses)
   l_bracket     == 0 &&
   r_bracket     == 0 &&

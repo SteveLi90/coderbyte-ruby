@@ -7,6 +7,8 @@ def PalindromeTwo(string)
 	end
 end
 
+private
+
 def clean_string(string)
 	string
 		.gsub(" ", "")

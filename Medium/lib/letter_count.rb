@@ -12,6 +12,8 @@ def LetterCount(string)
   target_word
 end
 
+private
+
 def repeat_letters(word)
   hash = Hash.new(0)
 

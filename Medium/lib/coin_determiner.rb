@@ -5,6 +5,8 @@ def CoinDeterminer(number)
   coins.length
 end
 
+private
+
 def make_change(amount, coins)
   return [] if amount == 0
 

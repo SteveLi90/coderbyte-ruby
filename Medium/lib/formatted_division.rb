@@ -5,6 +5,8 @@ def FormattedDivision(number_one, number_two)
   format_integer_part(integer) << "." << format_fraction_part(fraction)
 end
 
+private
+
 def format_integer_part(integer)
   string = integer.to_s.reverse
   result = ""

@@ -11,6 +11,8 @@ def ArrayAddition(array)
   "false"
 end
 
+private
+
 def sum_of_array(array)
   sum = 0
 

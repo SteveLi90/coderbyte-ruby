@@ -15,6 +15,8 @@ def SwapII(string)
   new_string
 end
 
+private
+
 def letters_in_between?(string)
   (1...string.length - 1).each do |index|
     return false unless LETTERS.include?(string[index].downcase)
