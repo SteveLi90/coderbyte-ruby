@@ -1,5 +1,5 @@
 Point = Struct.new(:x, :y)
-Rectangle = Struct.new(:one, :two, :three, :four)
+Rectangle = Struct.new(:ul, :ll, :ur, :lr) # upper-left, lower-left, etc...
 
 def OverlappingRectangles(string)
   half = string.length / 2
@@ -16,13 +16,26 @@ private
 def create_rectangle(string)
   string_points = string.split(",")
   rectangle = Rectangle.new
+  points = array_of_points(string_points)
 
-  rectangle.one = create_point(string_points[0])
-  rectangle.two = create_point(string_points[1])
-  rectangle.three = create_point(string_points[2])
-  rectangle.four = create_point(string_points[3])
+  points.each do |point|
+    rectangle.ul = point if # method to determine if is upper left, etc...
+    rectangle.ll = point if #
+    rectangle.ur = point if #
+    rectangle.lr = point if #
+  end
 
   rectangle
+end
+
+def array_of_points(string)
+  array = []
+
+  (0...4).each do |index|
+    create_point(string[index])
+  end
+
+  array
 end
 
 def create_point(string)
