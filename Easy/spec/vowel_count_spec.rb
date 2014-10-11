@@ -1,7 +1,7 @@
 require 'vowel_count'
 
 # Return the number of vowels the passed in string contains.
-describe "#VowelCount" do
+describe '#VowelCount' do
 
   it "'hello' should return 2" do
     expect(VowelCount('hello')).to eq(2)

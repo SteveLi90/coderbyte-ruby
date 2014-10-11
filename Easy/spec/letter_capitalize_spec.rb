@@ -1,7 +1,7 @@
 require 'letter_capitalize'
 
 # Have the function take the parameter being passed and capitalize the first letter of each word.
-describe "#LetterCapitalize" do
+describe '#LetterCapitalize' do
 
   it "'hello word' should return 'Hello World'" do
     expect(LetterCapitalize('hello world')).to eq('Hello World')

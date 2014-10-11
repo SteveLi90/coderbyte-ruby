@@ -7,10 +7,10 @@ def ArrayAdditionI(array)
     remaining_elements.combination(number).to_a
   end
   subsets.each do |subset|
-    return "true" if sum_of_array(subset) == maximum
+    return 'true' if sum_of_array(subset) == maximum
   end
 
-  "false"
+  'false'
 end
 
 def sum_of_array(array)

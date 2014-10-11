@@ -4,7 +4,7 @@ require 'simple_symbols'
 # Return the string "true" iff each letter is surrounded by a + symbol.
 # The string will not be empty and will have at least one letter.
 
-describe "#SimpleSymbols" do
+describe '#SimpleSymbols' do
 
   it "'++d+===+c++==a' should return 'false'" do
     expect(SimpleSymbols('++d+===+c++==a')).to eq('false')

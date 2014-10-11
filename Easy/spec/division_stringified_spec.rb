@@ -4,7 +4,7 @@ require 'division_stringified'
 # If an answer is only 3 digits long, return the number with no commas.
 # Otherwise, place commas every three digits from the right.
 
-describe "#DivisionStringified" do
+describe '#DivisionStringified' do
 
   it "5 and 2 should return '3'" do
     expect(DivisionStringified(5, 2)).to eq('3')
@@ -15,7 +15,7 @@ describe "#DivisionStringified" do
   end
 
   it "123456789 and 10000 should return '12,346'" do
-    expect(DivisionStringified(123456789, 10000)).to eq('12,346')
+    expect(DivisionStringified(123_456_789, 10_000)).to eq('12,346')
   end
 
 end

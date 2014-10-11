@@ -1,6 +1,6 @@
 def LetterCountI(string)
-  words = string.split(" ")
-  target_word = "-1"
+  words = string.split(' ')
+  target_word = '-1'
   repeated_letters = 1
 
   words.each do |word|

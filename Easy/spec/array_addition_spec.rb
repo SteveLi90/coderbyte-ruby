@@ -3,7 +3,7 @@ require 'array_addition_i'
 # Return 'true' if any combination of numbers in the array will sum to the largest number.
 # Otherwise, return the string 'false'.
 
-describe "#ArrayAdditionI" do
+describe '#ArrayAdditionI' do
 
   it "[5, 7, 16, 1, 2] should return 'false'" do
     expect(ArrayAdditionI([5, 7, 16, 1, 2])).to eq('false')

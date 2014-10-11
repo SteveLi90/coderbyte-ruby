@@ -7,7 +7,7 @@ def MeanMode(array)
 end
 
 def mean(array)
-  array.inject(0.0) { |sum, element| sum + element } / array.length
+  array.reduce(0.0) { |sum, element| sum + element } / array.length
 end
 
 def mode(array)

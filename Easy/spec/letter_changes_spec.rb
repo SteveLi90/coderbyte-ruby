@@ -2,7 +2,7 @@ require 'letter_changes'
 
 # Replace every letter in the string with the letter following it in the alphabet.
 # Capitalize every vowel in this new string and finally return this modified string.
-describe "#LetterChanges" do
+describe '#LetterChanges' do
 
   it "'hello*3' should return 'Ifmmp*3'" do
     expect(LetterChanges('hello*3')).to eq('Ifmmp*3')

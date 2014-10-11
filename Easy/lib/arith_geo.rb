@@ -1,10 +1,10 @@
 def ArithGeo(array)
   if is_arithmetic?(array)
-    "Arithmetic"
+    'Arithmetic'
   elsif is_geometric?(array)
-    "Geometric"
+    'Geometric'
   else
-    "-1"
+    '-1'
   end
 end
 

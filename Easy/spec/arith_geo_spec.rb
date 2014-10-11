@@ -5,7 +5,7 @@ require 'arith_geo'
 # Return "Geometric" if it follows a geometric pattern.
 # If the sequence doesn't follow either pattern return -1.
 
-describe "#ArithGeo" do
+describe '#ArithGeo' do
 
   it "[5, 10, 15] should return 'Arithmetic'" do
     expect(ArithGeo([5, 10, 15])).to eq('Arithmetic')

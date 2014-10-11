@@ -1,7 +1,7 @@
 def LongestWord(sentence)
-  cleaned_sentence = sentence.gsub(",", "").gsub(".", "").gsub("!", "").gsub("&", "")
-  words = cleaned_sentence.split(" ")
-  longest_word = ""
+  cleaned_sentence = sentence.gsub(',', '').gsub('.', '').gsub('!', '').gsub('&', '')
+  words = cleaned_sentence.split(' ')
+  longest_word = ''
   longest_word_length = 0
   hash = Hash.new(0)
 

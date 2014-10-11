@@ -6,5 +6,5 @@ def ExOh(string)
     o_count += 1 if string[index].downcase == 'o'
   end
 
-  if x_count == o_count then "true" else "false" end
+  if x_count == o_count then 'true' else 'false' end
 end

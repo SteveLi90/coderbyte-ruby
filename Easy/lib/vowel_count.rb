@@ -1,4 +1,4 @@
-VOWELS = ['a', 'e', 'i', 'o', 'u']
+VOWELS = %w(a e i o u)
 
 def VowelCount(string)
   cleaned_string = string.downcase
