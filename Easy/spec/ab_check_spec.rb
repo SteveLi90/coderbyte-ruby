@@ -1,6 +1,6 @@
 require 'ab_check'
 
-# Return the string "true" if the 'a' and 'b' are separated by exactly 3 places anywhere at least once.
+# Return the string "true" if the 'a' and 'b' are separated by exactly 3 places.
 describe '#ABCheck' do
 
   it "'after badly' should return 'false'" do
