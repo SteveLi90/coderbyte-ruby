@@ -1,6 +1,6 @@
 require 'alphabet_soup'
 
-# Have the function return the string passed in with the letters in alphabetical order.
+# Return the string passed in with the letters in alphabetical order.
 # Assume numbers and punctuation symbols will not be included in the string.
 describe '#AlphabetSoup' do
 
