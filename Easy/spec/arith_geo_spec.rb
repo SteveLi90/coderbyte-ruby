@@ -1,7 +1,7 @@
 require 'arith_geo'
 
 # Takes an array of numbers.
-# Return the string "Arithmetic" if the sequence follows an arithmetic pattern or
+# Return "Arithmetic" if the sequence follows an arithmetic pattern.
 # Return "Geometric" if it follows a geometric pattern.
 # If the sequence doesn't follow either pattern return -1.
 

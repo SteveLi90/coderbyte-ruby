@@ -1,31 +1,15 @@
 def ArithGeo(array)
-  if is_arithmetic?(array)
-    'Arithmetic'
-  elsif is_geometric?(array)
-    'Geometric'
-  else
-    '-1'
-  end
+  return 'Arithmetic' if arithmetic?(array)
+  return 'Geometric' if geometric?(array)
+  '-1'
 end
 
-def is_arithmetic?(array)
-  flag = true
+def arithmetic?(array)
   difference = array[1] - array.first
-
-  (1...(array.length - 1)).each do |index|
-    flag = false unless array[index + 1] - array[index] == difference
-  end
-
-  flag
+  (1...array.length - 1).all? { |x| array[x + 1] - array[x] == difference }
 end
 
-def is_geometric?(array)
-  flag = true
+def geometric?(array)
   factor = array[1] / array.first
-
-  (1...(array.length - 1)).each do |index|
-    flag = false unless array[index + 1] / array[index] == factor
-  end
-
-  flag
+  (1...array.length - 1).all? { |y| array[y + 1] / array[y] == factor }
 end
