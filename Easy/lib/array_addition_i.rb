@@ -1,24 +1,17 @@
 def ArrayAdditionI(array)
-  maximum = array.max
-  remaining_elements = array
-  remaining_elements.delete(maximum)
+  max = array.max
+  array.delete(max)
 
-  subsets = 1.upto(remaining_elements.length).flat_map do |number|
-    remaining_elements.combination(number).to_a
-  end
-  subsets.each do |subset|
-    return 'true' if sum_of_array(subset) == maximum
+  array.length.times do
+    array.rotate!
+    (0...array.length).each do |y|
+      return 'true' if sum_of_array(array[0, y]) == max
+    end
   end
 
   'false'
 end
 
 def sum_of_array(array)
-  sum = 0
-
-  array.each do |element|
-    sum += element
-  end
-
-  sum
+  array.reduce(&:+)
 end

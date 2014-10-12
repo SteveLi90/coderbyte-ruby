@@ -1,6 +1,6 @@
 require 'array_addition_i'
 
-# Return 'true' if any combination of numbers in the array will sum to the largest number.
+# Return 'true' if any combination will sum to the largest number.
 # Otherwise, return the string 'false'.
 
 describe '#ArrayAdditionI' do
