@@ -1,14 +1,11 @@
 def DashInsert(number)
-  string = number.to_s
-  new_string = ''
-  new_string << string[0]
+  array = number.to_s.split('')
+  string = ''
 
-  (0...string.length - 1).each do |index|
-    if string[index].to_i.odd? && string[index + 1].to_i.odd?
-      new_string << '-' unless string[index].to_i == 0 || string[index].to_i == 0
-    end
-    new_string << string[index + 1]
+  (0...array.length).each do |x|
+    string << array[x]
+    string << '-' if array[x].to_i.odd? && array[x + 1].to_i.odd?
   end
 
-  new_string
+  string
 end

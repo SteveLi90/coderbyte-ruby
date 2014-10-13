@@ -1,6 +1,6 @@
 require 'check_nums'
 
-# Take both parameters being passed and return the string "true" if num2 is greater than num1.
+# Return the string "true" if num2 is greater than num1.
 # If the two numbers are equal, return the string "-1".
 # Otherwise return the string "false".
 describe '#CheckNums' do

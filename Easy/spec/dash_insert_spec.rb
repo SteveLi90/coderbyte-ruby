@@ -11,7 +11,7 @@ describe '#DashInsert' do
     expect(DashInsert(454_793)).to eq('4547-9-3')
   end
 
-  it 'Insert dashes between each two odd numbers where the fist number is odd.' do
+  it 'Insert dashes between each two odd numbers where the first number is odd.' do
     expect(DashInsert(99_946)).to eq('9-9-946')
   end
 

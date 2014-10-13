@@ -1,6 +1,6 @@
 require 'first_factorial'
 
-# Have the function take the parameter being passed and return the factorial of it.
+# Have the function take the parameter being passed and return the factorial.
 describe '#FirstFactorial' do
 
   it 'return 24 if the input is 4' do
